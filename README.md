@@ -9,16 +9,30 @@ A Kotlin project that converts answers into corresponding questions using NLP te
 
 ## Requirements
 
-- Gradle  
-- Java (version 21 or higher)  
+- Gradle
+- Java (version 21 or higher)
 
 ## Build & Usage
 
-1. Open `Config.kt` and fill out the `text` variable with your input.  
-2. Sync the project and run it as a standard Gradle project.  
+1. Sync the project
+2. Run the project with
+
+```shell
+./gradlew run
+```
+
+This command will run the evaluation test. If you want a custom text to be converted,
+you need to pass some arguments to the application in the following way:
+
+```shell
+./gradlew run --args="en text.txt"
+```
+
+where ```text.txt``` is the file where you have the text. Currently, the first argument (the langauge) is ignored because only English is supported.
 
 > [!NOTE]
 > Ensure your environment meets the Java and Gradle version requirements.
+> The given text must consist of grammatically and correctly spelled sentences.
 
 ## Licensing
 

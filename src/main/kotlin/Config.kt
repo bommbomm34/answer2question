@@ -1,5 +1,6 @@
+// Evaluation text
 const val text = """
-Write here the text you want to generate questions of
+The city is beautiful.
 """
 
 val PUNCTS = setOf(",", ".", ";", ":", "!", "?")
